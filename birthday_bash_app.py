@@ -27,13 +27,13 @@ def render_hero():
         <div class="eyebrow">Jackson Hole, Wyoming</div>
         <div class="hero-title">Sarah &amp; Willy's<br><em>30th Birthday Bash</em></div>
         <div class="gold-line"></div>
-        <div class="hero-sub">August 6 &#8211; 10, 2025</div>
+        <div class="hero-sub">August 5 &#8211; 9, 2026</div>
         <div class="pill-row">
           <span class="pill">Fly Fishing</span>
           <span class="pill">Grand Teton</span>
           <span class="pill">Murder Mystery</span>
           <span class="pill">The Rose</span>
-          <span class="pill">Whitewater</span>
+          <span class="pill">Choose Your Own Adventure</span>
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@ def render_adventure_band():
     st.markdown("""
     <div class="adventure-band">
       <div class="adventure-header">
-        <div class="adventure-eyebrow">Saturday, August 9</div>
+        <div class="adventure-eyebrow">Saturday, August 8</div>
         <div class="adventure-title">Choose Your Own Adventure</div>
         <div class="gold-line"></div>
       </div>
@@ -91,18 +91,18 @@ def render_days():
     st.markdown(f"""
     <div class="day-row">
       <div class="content-left">
-        <div class="day-name">Wednesday, August 6</div>
+        <div class="day-name">Wednesday, August 5</div>
         <div class="event-row">
           <span class="event-time">2:00 pm</span>
           <span class="event-desc">Depart <strong>Meacham International Airport (KFTW)</strong> in Fort Worth. Please arrive by 1:15 pm so we can board together and get in the air on time.</span>
         </div>
         <div class="event-row">
           <span class="event-time">Afternoon</span>
-          <span class="event-desc">Arrive <strong>Driggs Airport</strong> and transfer directly to our overnight camp on the <strong>South Fork River</strong> with <a href="https://westbankanglers.com/pages/overnight-guided-fly-fishing-trips" target="_blank">West Bank Anglers</a>. <strong>Please pack a separate river go bag</strong> for this leg &#8212; your main luggage will go straight to the house. <strong>Babysitters will be with your children during the fishing trip and will bring them to the lodge once we're done on the water.</strong></span>
+          <span class="event-desc">Arrive <strong>Driggs Airport</strong> and transfer directly to our overnight camp on the <strong>South Fork River</strong> with <a href="https://westbankanglers.com/pages/overnight-guided-fly-fishing-trips" target="_blank">West Bank Anglers</a>. <strong>Please pack a separate river go bag</strong> for this leg &#8212; your main luggage will go straight to the house. Children are welcome at the lodge, and we will have nannies to watch them while we're on the water.</span>
         </div>
         <div class="event-row">
           <span class="event-time">Evening</span>
-          <span class="event-desc">Fish the afternoon and evening guided by West Bank Anglers' expert team. The South Fork is renowned for wild <strong>cutthroat and brown trout</strong>. As the sun sets, we'll gather around a campfire for a proper outdoor cookout &#8212; grilled fish, cast iron sides, and cold drinks under a sky full of stars. We sleep at the river camp that night.</span>
+          <span class="event-desc">Fish the afternoon and evening guided by West Bank Anglers' expert team. The South Fork is renowned for wild <strong>cutthroat and brown trout</strong>. As the sun sets, we'll gather around a campfire for a proper outdoor cookout &#8212; grilled fish, bonfires, and cocktails under a sky full of stars. We will glamp at the river camp that night.</span>
         </div>
       </div>
       <div class="icon-col">
@@ -120,7 +120,7 @@ def render_days():
         <div class="icon-label">Murder mystery</div>
       </div>
       <div class="content-right">
-        <div class="day-name">Thursday, August 7</div>
+        <div class="day-name">Thursday, August 6</div>
         <div class="event-row">
           <span class="event-time">Morning</span>
           <span class="event-desc">Rise with the river. After a camp breakfast, we're back on the water with our guides for one final morning session on the <strong>South Fork</strong>. Make the most of it &#8212; this is world-class fishing.</span>
@@ -131,7 +131,7 @@ def render_days():
         </div>
         <div class="event-row">
           <span class="event-time">Evening</span>
-          <span class="event-desc"><strong>Catered dinner at the house</strong>, followed by a full murder mystery night. We highly recommend watching <em>The Traitors</em> in advance &#8212; the perfect primer on suspicion and keeping a poker face. Come ready to accuse. <strong>Nannies are arranged at all rent houses</strong> so every adult can enjoy an uninterrupted evening.</span>
+          <span class="event-desc"><strong>Catered dinner at the house</strong>, followed by a full murder mystery night. We highly recommend watching <em>The Traitors</em> in advance &#8212; the perfect primer on suspicion and keeping a poker face. Come ready to accuse. Nannies are arranged so everyone can enjoy an uninterrupted evening.</span>
         </div>
       </div>
     </div>
@@ -141,7 +141,7 @@ def render_days():
     st.markdown(f"""
     <div class="day-row">
       <div class="content-left">
-        <div class="day-name">Friday, August 8</div>
+        <div class="day-name">Friday, August 7</div>
         <div class="event-row">
           <span class="event-time">Morning</span>
           <span class="event-desc">We set out early for the <strong>Grand Teton saddle hike</strong> &#8212; one of Wyoming's most iconic ascents. Expect 10&#8211;12 miles round trip with significant elevation gain. <strong>Please bring proper hiking shoes, trek poles, warm layers, and plenty of water.</strong> Children are welcome &#8212; <strong>front packs and backpack carriers will be available</strong>, or nannies will be at the house all day. We'll return late afternoon.</span>
@@ -153,7 +153,7 @@ def render_days():
       </div>
       <div class="icon-col">
         {ICON_CHAMPAGNE}
-        <div class="icon-label">Dinner &amp; The Rose</div>
+        <div class="icon-label">Snake River Grill &amp; The Rose</div>
       </div>
     </div>
     """, unsafe_allow_html=True)
@@ -166,7 +166,7 @@ def render_days():
         <div class="icon-label">Adventure day</div>
       </div>
       <div class="content-right">
-        <div class="day-name">Saturday, August 9</div>
+        <div class="day-name">Saturday, August 8</div>
         <div class="event-row">
           <span class="event-time">Daytime</span>
           <span class="event-desc">Time to choose your adventure. We'll split into groups &#8212; just let us know your preference and we'll handle all the logistics and bookings.<br><br>
@@ -186,7 +186,7 @@ def render_days():
     st.markdown(f"""
     <div class="day-row">
       <div class="content-left">
-        <div class="day-name">Sunday, August 10</div>
+        <div class="day-name">Sunday, August 9</div>
         <div class="event-row">
           <span class="event-time">5:15 am</span>
           <span class="event-desc"><strong>Please be loaded and ready to leave for the airport by 5:15 am.</strong> Set two alarms &#8212; we are on a firm schedule because the aircraft is continuing on an international trip immediately after dropping us in Dallas, and we cannot delay departure.</span>
@@ -222,7 +222,7 @@ def render_rsvp():
     st.markdown(PINE_DIVIDER_SVG, unsafe_allow_html=True)
     st.markdown('<div class="body-wrap">', unsafe_allow_html=True)
     st.markdown("""
-    <div class="rsvp-eyebrow">Kindly respond by July 15, 2025</div>
+    <div class="rsvp-eyebrow">Kindly respond by July 15, 2026</div>
     <div class="rsvp-title">Please let us know you're coming</div>
     <div class="gold-line" style="margin:0 0 1.5rem;"></div>
     """, unsafe_allow_html=True)
