@@ -9,18 +9,39 @@ html, body, [class*="css"] { font-family: 'Cormorant Garamond', Georgia, serif; 
 .main .block-container { padding: 0 !important; max-width: 820px !important; }
 
 /* --- Hide Streamlit chrome so the invitation looks standalone --- */
-#MainMenu { visibility: hidden; display: none; }
-header { visibility: hidden; display: none; height: 0 !important; }
-footer { visibility: hidden; display: none; height: 0 !important; }
-[data-testid="stHeader"] { display: none !important; height: 0 !important; }
-[data-testid="stToolbar"] { display: none !important; }
+#MainMenu, #MainMenu * { visibility: hidden !important; display: none !important; }
+header, header * { visibility: hidden !important; display: none !important; height: 0 !important; }
+footer, footer * { visibility: hidden !important; display: none !important; height: 0 !important; }
+[data-testid="stHeader"],
+[data-testid="stHeader"] * { display: none !important; visibility: hidden !important; height: 0 !important; }
+[data-testid="stToolbar"],
+[data-testid="stToolbar"] * { display: none !important; visibility: hidden !important; }
+[data-testid="stToolbarActions"] { display: none !important; visibility: hidden !important; }
 [data-testid="stDecoration"] { display: none !important; }
 [data-testid="stStatusWidget"] { display: none !important; }
-[data-testid="stAppDeployButton"] { display: none !important; }
-.stDeployButton { display: none !important; }
+[data-testid="stAppDeployButton"],
+[data-testid="stAppDeployButton"] * { display: none !important; visibility: hidden !important; }
+[data-testid="stActionButton"] { display: none !important; }
+[data-testid="manage-app-button"] { display: none !important; }
+[data-testid="stBaseButton-headerNoPadding"] { display: none !important; }
+[data-testid="stBaseButton-header"] { display: none !important; }
+[data-testid="stMainMenu"] { display: none !important; }
+.stDeployButton,
+.stDeployButton * { display: none !important; visibility: hidden !important; }
+.stActionButton { display: none !important; }
+.viewerBadge_container__r5tak,
+.viewerBadge_link__qRIco,
+.viewerBadge_text__1JaDK,
+[class*="viewerBadge"] { display: none !important; visibility: hidden !important; }
+a[href*="streamlit.io"] { display: none !important; }
+a[href*="github.com/streamlit"] { display: none !important; }
+a[href*="share.streamlit.io"] { display: none !important; }
+button[kind="header"] { display: none !important; }
+button[kind="headerNoPadding"] { display: none !important; }
 [data-testid="stAppViewContainer"] > .main { padding-top: 0 !important; }
 [data-testid="stAppViewBlockContainer"] { padding-top: 0 !important; }
 .stAppViewContainer .main .block-container { padding-top: 0 !important; }
+div[data-testid="stAppViewContainer"] > section > div:first-child { padding-top: 0 !important; }
 
 .hero-block {
     background: #1a2e1a; padding: 3.5rem 2rem 2.5rem;
@@ -101,27 +122,29 @@ footer { visibility: hidden; display: none; height: 0 !important; }
     .pill-row { gap: 0.5rem 0.9rem; margin-top: 0.9rem; }
     .pill { font-size: 0.55rem; letter-spacing: 2px; }
 
-    /* Illustration bands stack vertically: art on top, copy below, full-width */
+    /* Illustration bands stack vertically: art on top, copy below, full-width, centered */
     .illus-band-inner { flex-direction: column !important; }
     .illus-band-art { width: 100%; order: -1; }
     .illus-band-copy,
-    .illus-band-copy.right { width: 100%; padding: 1.1rem 1.25rem 1.25rem; text-align: left; }
-    .illus-title { font-size: 1.25rem; }
-    .illus-desc { font-size: 0.88rem; }
+    .illus-band-copy.right { width: 100%; padding: 1.25rem 1.25rem 1.5rem; text-align: center !important; }
+    .illus-eyebrow { text-align: center; }
+    .illus-title { font-size: 1.4rem; text-align: center; }
+    .illus-desc { font-size: 0.92rem; text-align: center; }
+    .illus-link { display: inline-block; margin-top: .6rem; }
 
     /* Adventure band header */
     .adventure-header { padding: 1.2rem 1.25rem 0.6rem; }
     .adventure-title { font-size: 1.4rem; }
     .adventure-eyebrow { font-size: 0.6rem; letter-spacing: 3px; }
 
-    /* Day-by-day: stack icon above content; drop center divider */
+    /* Day-by-day: stack icon above content; drop center divider; center day name */
     .body-wrap { padding: 1.5rem 1.15rem; }
     .day-row { flex-direction: column !important; gap: 0.4rem; margin-bottom: 2rem; }
     .content-left, .content-right { border: none !important; padding: 0 !important; width: 100%; }
-    .icon-col { width: 100%; flex-direction: row; justify-content: flex-start; gap: 0.6rem; padding-top: 0; margin-bottom: 0.25rem; order: -1; align-items: center; }
+    .icon-col { width: 100%; flex-direction: row; justify-content: center; gap: 0.6rem; padding-top: 0; margin-bottom: 0.5rem; order: -1; align-items: center; }
     .icon-col svg { width: 40px !important; height: 40px !important; }
     .icon-label { margin-top: 0; font-size: 0.55rem; }
-    .day-name { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .day-name { font-size: 1.35rem; margin-bottom: 0.6rem; text-align: center; }
     .event-row { gap: 0.6rem; margin-bottom: 0.7rem; }
     .event-time { min-width: 54px; font-size: 0.66rem; }
     .event-desc { font-size: 0.88rem; line-height: 1.6; }

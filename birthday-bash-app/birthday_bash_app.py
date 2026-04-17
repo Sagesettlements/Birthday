@@ -33,7 +33,7 @@ def render_hero():
           <span class="pill">Grand Teton</span>
           <span class="pill">Murder Mystery</span>
           <span class="pill">The Rose</span>
-          <span class="pill">Whitewater</span>
+          <span class="pill">Choose Your Own Adventure</span>
         </div>
       </div>
     </div>
@@ -98,11 +98,11 @@ def render_days():
         </div>
         <div class="event-row">
           <span class="event-time">Afternoon</span>
-          <span class="event-desc">Arrive <strong>Driggs Airport</strong> and transfer directly to our overnight camp on the <strong>South Fork River</strong> with <a href="https://westbankanglers.com/pages/overnight-guided-fly-fishing-trips" target="_blank">West Bank Anglers</a>. <strong>Please pack a separate river go bag</strong> for this leg &#8212; your main luggage will go straight to the house. <strong>Babysitters will be with your children during the fishing trip and will bring them to the lodge once we're done on the water.</strong></span>
+          <span class="event-desc">Arrive <strong>Driggs Airport</strong> and transfer directly to our overnight camp on the <strong>South Fork River</strong> with <a href="https://westbankanglers.com/pages/overnight-guided-fly-fishing-trips" target="_blank">West Bank Anglers</a>. <strong>Please pack a separate river go bag</strong> for this leg &#8212; your main luggage will go straight to the house. Children are welcome at the lodge, and we will have nannies to watch them while we're on the water.</span>
         </div>
         <div class="event-row">
           <span class="event-time">Evening</span>
-          <span class="event-desc">Fish the afternoon and evening guided by West Bank Anglers' expert team. The South Fork is renowned for wild <strong>cutthroat and brown trout</strong>. As the sun sets, we'll gather around a campfire for a proper outdoor cookout &#8212; grilled fish, cast iron sides, and cold drinks under a sky full of stars. We sleep at the river camp that night.</span>
+          <span class="event-desc">Fish the afternoon and evening guided by West Bank Anglers' expert team. The South Fork is renowned for wild <strong>cutthroat and brown trout</strong>. As the sun sets, we'll gather around a campfire for a proper outdoor cookout &#8212; grilled fish, bonfires, and cocktails under a sky full of stars. We will glamp at the river camp that night.</span>
         </div>
       </div>
       <div class="icon-col">
@@ -131,7 +131,7 @@ def render_days():
         </div>
         <div class="event-row">
           <span class="event-time">Evening</span>
-          <span class="event-desc"><strong>Catered dinner at the house</strong>, followed by a full murder mystery night. We highly recommend watching <em>The Traitors</em> in advance &#8212; the perfect primer on suspicion and keeping a poker face. Come ready to accuse. <strong>Nannies are arranged at all rent houses</strong> so every adult can enjoy an uninterrupted evening.</span>
+          <span class="event-desc"><strong>Catered dinner at the house</strong>, followed by a full murder mystery night. We highly recommend watching <em>The Traitors</em> in advance &#8212; the perfect primer on suspicion and keeping a poker face. Come ready to accuse. Nannies are arranged so everyone can enjoy an uninterrupted evening.</span>
         </div>
       </div>
     </div>
@@ -153,7 +153,7 @@ def render_days():
       </div>
       <div class="icon-col">
         {ICON_CHAMPAGNE}
-        <div class="icon-label">Dinner &amp; The Rose</div>
+        <div class="icon-label">Snake River Grill &amp; The Rose</div>
       </div>
     </div>
     """, unsafe_allow_html=True)
