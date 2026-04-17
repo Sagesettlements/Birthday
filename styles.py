@@ -72,5 +72,43 @@ html, body, [class*="css"] { font-family: 'Cormorant Garamond', Georgia, serif; 
 .footer-block { background: #fdfcf8; text-align: center; padding: 2rem; border-top: 1px solid #e8e0cc; }
 .footer-block p { font-size: 0.88rem; color: #8b7a5a; letter-spacing: 1px; margin-bottom: .4rem; }
 .footer-sig { font-style: italic; color: #b8a97a !important; font-size: 1rem !important; }
+
+/* ---------- Dark mode (auto, matches Streamlit default dark theme) ---------- */
+@media (prefers-color-scheme: dark) {
+    /* Illustration bands */
+    .illus-band { background: #262730; }
+    .illus-title { color: #FAFAFA; }
+    .illus-title em { color: #b8a97a; }
+    .illus-desc { color: #c8c0b8; }
+    .illus-eyebrow { color: #b8a97a; }
+    .illus-link { color: #b8a97a; border-bottom-color: #b8a97a; }
+
+    /* Adventure band */
+    .adventure-band { background: #262730; border-top-color: #3a3a3a; }
+    .adventure-title { color: #FAFAFA; }
+    .adventure-eyebrow { color: #b8a97a; }
+
+    /* Body wrap (days + RSVP container) */
+    .body-wrap { background: #0E1117; }
+    .day-name { color: #FAFAFA; }
+    .event-time { color: #b8a97a; }
+    .event-desc { color: #d8d0c0; }
+    .event-desc strong { color: #FAFAFA; }
+    .event-desc a { color: #b8a97a; border-bottom-color: #b8a97a; }
+    .content-left { border-right-color: #3a3a3a; }
+    .content-right { border-left-color: #3a3a3a; }
+
+    /* Childcare note */
+    .childcare-note { background: #1a1d24; border-top-color: #3a3a3a; }
+    .childcare-note p { color: #c8b882; }
+
+    /* RSVP */
+    .rsvp-eyebrow { color: #b8a97a; }
+    .rsvp-title { color: #FAFAFA; }
+
+    /* Footer */
+    .footer-block { background: #0E1117; border-top-color: #3a3a3a; }
+    .footer-block p { color: #b8a97a; }
+}
 </style>
 """
